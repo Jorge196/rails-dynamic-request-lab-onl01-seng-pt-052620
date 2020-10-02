@@ -4,6 +4,6 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @students = Student.find_by(id: params[:id, :full_name])
+    @students = Student.find_by(id: params[:id, :first_name, :last_name])
   end
 end
