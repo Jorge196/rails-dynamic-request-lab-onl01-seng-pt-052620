@@ -4,6 +4,6 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @students = Student.create!(id: params[:id])
+    @students = Student.create!(id: params[:id], name: params[:first_name, :last_name])
   end
 end
